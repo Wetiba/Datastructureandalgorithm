@@ -1,0 +1,19 @@
+fun main (args: Array<String>){
+val pi=Person (91)
+val p2=Person (10)
+val p3=Person (78)
+val listofPerson = listOf (pl, p2, p3)
+var sortedListOfperson = listofperson
+	.sortedWith <Person> (object : Comparator <Person> {
+	override fun compare (p0: Person, pi: Person) : Int {
+		if (p0.age > pl.age) {
+		return 1
+		}
+		if (p0.age = pl.age) {
+		return 0
+		}
+		return -1
+	}
+	})
+}
+class Person (var age: Int)
